@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nourhan Farid</title>
+        <!--?========> Font Awesome <========-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--?========> Animate.CSS <========-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!--?========> Google Fonts <========-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+        <!--?========> BoxIcon  <========-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+        <!--?========> Bootstrap Style Sheet <========-->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+        <!--?========> Main style Sheet <========-->
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <!--?========> Favicon <========-->
+        <link rel="shortcut icon" href="images/user.png" type="image/x-icon">
+
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" class="scrollspy-example"
+        tabindex="0">
+        <!-- & Nav -->
+        <nav id="scrollNav"
+            class="navbar bg-transparent fixed sm:px-10 mx-auto z-50 xl:px-40 py-5 transition-all duration-700 shadow-sm">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-3xl text-[#a9194f] font-bold z-20" id="navName">Port<span
+                        class='text-[#ffa4c8] -ms-2'>folio</span></a>
+            </div>
+            <div class="flex-none z-20">
+
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li>
+                            <a href='#home'
+                                class='navLink text-lg font-semibold hover:text-[#a9194f] text-white transition-all border-none hover:border-none btn btn-ghost'>Home</a>
+                        </li>
+                        <li>
+                            <a href='#about'
+                                class='navLink text-lg font-semibold hover:text-[#a9194f] text-white transition-all border-none hover:border-none btn btn-ghost'>About</a>
+                        </li>
+                        <li>
+                            <a href='#skills'
+                                class='navLink text-lg font-semibold hover:text-[#a9194f] text-white transition-all border-none hover:border-none btn btn-ghost'>Skills</a>
+                        </li>
+                        <li>
+                            <a href='#experience'
+                                class='navLink text-lg font-semibold hover:text-[#a9194f] text-white transition-all border-none hover:border-none btn btn-ghost'>Experience</a>
+                        </li>
+                        <li>
+                            <a href='#projects'
+                                class='navLink text-lg font-semibold hover:text-[#a9194f] text-white transition-all border-none hover:border-none btn btn-ghost'>Projects</a>
+                        </li>
+                        <li>
+                            <a href='#contact'
+                                class='navLink text-lg font-semibold hover:text-[#a9194f] text-white transition-all border-none hover:border-none btn btn-ghost'>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ms-5">
+                    <div class="dropdown dropdown-bottom dropdown-end me-2">
+                        <div tabIndex={0} role="button" class="btn btn-ghost font-bold lg:hidden">
+                            <i class="fa-solid fa-bars text-2xl text-white"></i>
+
+                        </div>
+                        <ul tabIndex={0}
+                            class="menu menu-sm dropdown-content bg-[#FAF7F5] rounded-box z-50 mt-3 w-44 p-2 shadow flex justify-start items-start">
+                            <li class='w-full'>
+                                <a href='#home'
+                                    class='text-lg font-semibold text-[#a9194f] transition-all border-none hover:border-none py-2 outline-none w-full hover:bg-gray-100'>
+                                    Home</a>
+                            </li>
+                            <li class='w-full'>
+                                <a href='#about'
+                                    class='text-lg font-semibold text-[#a9194f] transition-all border-none hover:border-none py-2 outline-none w-full hover:bg-gray-100'>
+                                    About</a>
+                            </li>
+                            <li class='w-full'>
+                                <a href='#skills'
+                                    class='text-lg font-semibold text-[#a9194f] transition-all border-none hover:border-none py-2 outline-none w-full hover:bg-gray-100'>
+                                    Skills</a>
+                            </li>
+                            <li class='w-full'>
+                                <a href='#experience'
+                                    class='text-lg font-semibold text-[#a9194f] transition-all border-none hover:border-none py-2 outline-none w-full hover:bg-gray-100'>
+                                    Experience</a>
+                            </li>
+                            <li class='w-full'>
+                                <a href='#projects'
+                                    class='text-lg font-semibold text-[#a9194f] transition-all border-none hover:border-none py-2 outline-none w-full hover:bg-gray-100'>
+                                    Projects</a>
+                            </li>
+                            <li class='w-full'>
+                                <a href='#contact'
+                                    class='text-lg font-semibold text-[#a9194f] transition-all border-none hover:border-none py-2 outline-none w-full hover:bg-gray-100'>
+                                    Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- & Nav -->
+        <!-- ^ Home -->
+        <div id="home" class='w-screen h-screen m-0 p-0 left-0 top-0' data-scroll-index="0">
+            <div
+                class="animate__animated animate__fadeInUp content absolute z-20 top-40 md:left-20 xl:left-36 flex flex-col justify-center items-start px-10 py-20">
+                <h6 class=' text-white font-bold text-2xl py-2'>Hello</h6>
+                <h1 class=' text-white font-bold text-6xl lg:text-7xl py-2 leading-tight'>I&apos;m <span
+                        class='text-[#a9194f] font-["Lobster"]'>Nourhan<br />Farid</span>
+                </h1>
+                <p class=" text-white text-xl font-semibold py-2">Frontend developer</p>
+            </div>
+            <video class='w-full h-full object-cover' autoPlay muted loop playsInline>
+                <source src='images/3129595-sd_640_360_30fps.mp4' type="video/mp4" />
+            </video>
+        </div>
+        <!-- ^ Home -->
+        <!-- * About -->
+        <div>
+            <button onclick="scrollTop"
+                class="scrollTop cursor-pointer duration-200 hover:-translate-y-1 active:scale-100 text-2xl flex rounded-full bg-[#3f2985] text-white px-3 py-2.5 z-20 transition-all bottom-8 right-3 fixed"
+                title="GoTop">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+        <div id="about" class='flex justify-center items-center mx-auto py-28 bg-gray-100' data-scroll-index="1">
+            <div class="animate__animated animate__fadeInUp grid grid-cols-1 md:grid-cols-2">
+                <div class="profile mx-auto px-5">
+                    <img src='images/073ee0c4bcd7cb210337e71199652d78.jpg' class='rounded-3xl' alt="profileImg" />
+                </div>
+                <div class="context flex flex-col items-start justify-start px-10 lg:px-5 mx-auto">
+                    <h1 class="text-5xl font-bold text-left mb-5 mt-4 text-[#005]">About Me</h1>
+                    <h3 class='text-[#A9194F] font-semibold text-2xl my-2 font-["Lobster"]'>Hi, My name is Nourhan
+                        Farid!!
+                    </h3>
+                    <p class="text-lg text-left max-w-xl my-2 text-[#314a6b] leading-relaxed">I am a software
+                        developer with
+                        a passion for creating
+                        innovative and user-friendly applications. I have a strong foundation in computer science and a
+                        keen eye for detail. I am always looking for ways to improve my skills and stay up-to
+                        date with the latest technologies.
+                    </p>
+
+                    <div class="flex justify-around items-center my-5">
+                        <button
+                            class='btn bg-transparent shadow-xl border-b-[3px] border-b-[#A9194F] hover:border-t-[3px] hover:border-t-[#A9194F] me-3 text-[#005] px-7 outline-none'>Download
+                            CV</button>
+                        <button
+                            class='btn bg-transparent shadow-xl border-b-[3px] border-b-[#A9194F] hover:border-t-[3px] hover:border-t-[#A9194F] ms-3 text-[#005] px-7 outline-none'>Contact
+                            Us</button>
+                    </div>
+                    <div class="socialLinks mt-3">
+                        <ul>
+                            <li
+                                class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                <a><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li
+                                class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                <a><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li
+                                class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                <a><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li
+                                class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                <a><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li
+                                class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                <a><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li
+                                class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                <a><i class="fa-brands fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- * About -->
+        <!-- ~ Skills -->
+        <div id="skills" class='mx-auto flex flex-col justify-center items-around py-14' data-scroll-index="2">
+            <div class="animate__animated animate__fadeInUp lang my-10">
+                <h2 class='text-center text-4xl text-[#005] font-bold my-5'>Skills</h2>
+            </div>
+            <div class="animate__animated animate__fadeInUp mx-auto pb-16">
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto gap-20">
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/html-92b76a73.png' class='w-28 h-28' alt="HTML5" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>HTML5</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/css-79a7f026.png' class='w-28 h-28' alt="CSS3" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>CSS3</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/bootstrap.png' class='w-28 h-28' alt="Bootstrap" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>Bootstrap</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/JS.png' class='w-28 h-28' alt="Javascript" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>Javascript</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/nextJs.png' class='w-28 h-28' alt="Next.js" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>Next.js</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/nodejs.png' class='w-28 h-28' alt="Node.js" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>Node.js</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/reactjs.png' class='w-28 h-28' alt="React" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>React</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/git.png' class='w-28 h-28' alt="Git" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>Git</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/sass.png' class='w-28 h-28' alt="SASS" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>SASS</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/tailwind.png' class='w-28 h-28' alt="Tailwind" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>Tailwind</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/Typescript.png' class='w-28 h-28' alt="Typescript" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>Typescript</h3>
+                    </div>
+                    <div
+                        class="item bg-gray-200 rounded-3xl flex flex-col justify-center items-center w-fit px-10 py-8 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/jquery.png' class='w-28 h-28' alt="jquery" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-1.5'>jquery</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ~ Skills -->
+        <!-- todo: Experience  -->
+        <div id="experience" class='pb-20 pt-20' data-scroll-index="3">
+            <div class="animate__animated animate__fadeInUp my-8">
+                <h2 class='text-center text-4xl text-[#005] font-bold my-5'>My Experience</h2>
+            </div>
+            <div class="animate__animated animate__fadeInUp grid grid-cols-1 mx-10 xl:mx-48">
+                <div class="my-10">
+                    <div
+                        class="item group bg-gray-200 rounded-3xl flex flex-col justify-start items-start w-full px-10 py-10 hover:-translate-y-3 hover:transition-all duration-500 hover:duration-500 hover:border-b-[#A9194F] hover:border-b-4">
+                        <img src='images/CodeA.jpg' class='w-28 h-28' alt="CodeAlpha" />
+                        <h3 class='text-center text-2xl text-[#005] font-bold mt-2'>CodeAlpha</h3>
+                        <p
+                            class='text-center text-lg font-semibold text-gray-600 my-3 group-hover:text-[#005] transition-all group-hover:transition-all'>
+                            Frontend Developer intern</p>
+                        <ul class='list-disc'>
+                            <li class='ms-4 text-gray-800 font-semibold'>Created Multiple Software Development Projects
+                                with
+                                their detailed Documentation. </li>
+                            <li class='ms-4 text-gray-800 font-semibold'>Worked with the Dynamic Team of CodeAlpha.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- todo: Experience  -->
+        <!-- & Projects -->
+        <div id="projects" class='pb-20 pt-20' data-scroll-index="4">
+            <div class="animate__animated animate__fadeInUp my-8">
+                <h2 class='text-center text-4xl text-[#005] font-bold mt-7 mb-2'>My Projects</h2>
+                <p class='text-center text-lg text-gray-700 font-semibold mt-5 mb-6'>Some Of My Distinguished Works</p>
+            </div>
+            <div class="mx-16 lg:mx-20">
+                <div class="animate__animated animate__fadeInUp grid grid-cols-1 lg:grid-cols-2 mx-0 lg:mx-20 gap-5">
+                    <div
+                        class="item bg-gray-200 hover:-translate-y-2 hover:transition-all transition-all hover:duration-500 duration-500 shadow-xl rounded-xl hover:border-b-[#A9194F] hover:border-b-4">
+                        <div class="p-5">
+                            <img src='images/breed.jpg' alt="img1" />
+                        </div>
+                        <div class="context px-5">
+                            <h3 class="text-xl text-[#005] font-bold my-2">Web development</h3>
+                            <p class="text-lg text-gray-600 mb-4">This is a description of the project</p>
+                        </div>
+                    </div>
+                    <div
+                        class="item bg-gray-200 hover:-translate-y-2 hover:transition-all transition-all hover:duration-500 duration-500 shadow-xl rounded-xl hover:border-b-[#A9194F] hover:border-b-4">
+                        <div class="p-5">
+                            <img src='images/lib1.jpg' alt="img2" />
+                        </div>
+                        <div class="context px-5">
+                            <h3 class="text-xl text-[#005] font-bold my-2">Web development</h3>
+                            <p class="text-lg text-gray-600 mb-4">This is a description of the project</p>
+                        </div>
+                    </div>
+                    <div
+                        class="item bg-gray-200 hover:-translate-y-2 hover:transition-all transition-all hover:duration-500 duration-500 shadow-xl rounded-xl hover:border-b-[#A9194F] hover:border-b-4">
+                        <div class="p-5">
+                            <img src='images/price.jpg' alt="img3" />
+                        </div>
+                        <div class="context px-5">
+                            <h3 class="text-xl text-[#005] font-bold my-2">Web development</h3>
+                            <p class="text-lg text-gray-600 mb-4">This is a description of the project</p>
+                        </div>
+                    </div>
+                    <div
+                        class="item bg-gray-200 hover:-translate-y-2 hover:transition-all transition-all hover:duration-500 duration-500 shadow-xl rounded-xl hover:border-b-[#A9194F] hover:border-b-4">
+                        <div class="p-5">
+                            <img src='images/weather.jpg' alt="img4" />
+                        </div>
+                        <div class="context px-5">
+                            <h3 class="text-xl text-[#005] font-bold my-2">Web development</h3>
+                            <p class="text-lg text-gray-600 mb-4">This is a description of the project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- & Projects -->
+        <!-- ^ Contact -->
+        <div id="contact" class='pb-20 pt-20' data-scroll-index="5">
+            <div class="animate__animated animate__fadeInUp my-8">
+                <h2 class='text-center text-4xl text-[#005] font-bold my-5'>Contact Me</h2>
+            </div>
+            <div class="animate__animated animate__fadeInUp grid grid-cols-1 md:grid-cols-2 mx-10 xl:mx-32 gap-10">
+                <div class="grid-item ">
+                    <div class="lg:p-10 mx-auto">
+                        <h3 class='text-left text-xl text-[#a9194f] font-bold my-4'>Don&apos;t be shy! Let&apos;s
+                            work
+                            Together</h3>
+                        <h4 class='text-left text-lg text-gray-950 font-semibold max-w-lg'>Feel free to get in touch
+                            with
+                            me. I am always open to discussing new projects, creative ideas or opportunities to be part
+                            of your
+                            visions.</h4>
+                        <div class="my-3">
+                            <div class="address flex justify-start items-start group mt-2">
+                                <div
+                                    class="icon rounded-full p-2 border-2 border-[#005] group-hover:bg-[#005] duration-700 transition-all hover:transition-all">
+                                    <i class="fa-solid fa-map text-2xl text-[#005] group-hover:text-white"></i>
+                                </div>
+                                <div class="ms-4 mb-2">
+                                    <h4 class='font-bold text-[#005]'>Address Point:</h4>
+                                    <p class='text-gray-800 font-semibold'>123 Street New York City , United States.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="address flex justify-start items-start group mt-2">
+                                <div
+                                    class="icon rounded-full p-2 border-2 border-[#005] group-hover:bg-[#005] duration-700 transition-all hover:transition-all">
+                                    <i class="fa-solid fa-envelope text-2xl text-[#005] group-hover:text-white"></i>
+                                </div>
+                                <div class="ms-4 mb-2">
+                                    <h4 class='font-bold text-[#005]'>Mail Me:</h4>
+                                    <p class='text-gray-800 font-semibold'>nourhan@mail.com</p>
+                                </div>
+                            </div>
+                            <div class="address flex justify-start items-start group mt-2">
+                                <div
+                                    class="icon rounded-full p-2 border-2 border-[#005] group-hover:bg-[#005] duration-700 transition-all hover:transition-all">
+                                    <i class="fa-solid fa-phone text-2xl text-[#005] group-hover:text-white"></i>
+                                </div>
+                                <div class="ms-4 mb-2">
+                                    <h4 class='font-bold text-[#005]'>Call Me:</h4>
+                                    <p class='text-gray-800 font-semibold'>+216 21 184 010</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="socialLinks mt-3">
+                            <ul>
+                                <li
+                                    class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                    <a><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li
+                                    class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                    <a><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li
+                                    class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                    <a><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                                <li
+                                    class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                    <a><i class="fa-brands fa-github"></i></a>
+                                </li>
+                                <li
+                                    class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                    <a><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li
+                                    class="me-0.5 btn btn-ghost hover:-translate-y-2 transition-all hover:transition-all duration-500 hover:duration-500 text-xl text-[#005]">
+                                    <a><i class="fa-brands fa-dribbble"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+
+                    <form class='lg:p-5 mx-auto rounded-2xl'>
+                        <label class="input input-bordered flex items-center gap-3 max-w-lg my-3 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="h-4 w-4 opacity-70">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+                            </svg>
+                            <input type="text" class="grow" placeholder="Username" />
+                        </label>
+                        <label class="input input-bordered flex items-center gap-3 max-w-lg my-3 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="h-4 w-4 opacity-70">
+                                <path
+                                    d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                                <path
+                                    d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                            </svg>
+                            <input type="text" class="grow" placeholder="Email" />
+                        </label>
+                        <label class="input input-bordered flex items-center gap-3 max-w-lg my-3 mx-auto">
+
+                            <input type="text" class="grow" placeholder="Subject" />
+                        </label>
+
+
+
+                        <textarea
+                            class="grow textarea textarea-bordered gap-3 my-1 w-full max-w-lg flex items-center mx-auto min-h-40"
+                            placeholder="Leave me a message"></textarea>
+
+
+                        <div class="buttons flex justify-end me-5">
+                            <button
+                                class="btn btn-ghost text-white bg-[#3f2985] hover:bg-indigo-800 px-8 my-3 font-semibold text-base">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- ^ Contact -->
+        <!--!========> JS File <========-->
+        <script src="JS/jquery-3.7.1.min.js"></script>
+        <script src="JS/script.js"></script>
+    </body>
+
+</html>
